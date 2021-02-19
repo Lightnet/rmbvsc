@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+   <head>
+        <script src="https://redom.js.org/redom.min.js"></script>
+        <!--<br> 1: Be respect to others.-->
+        <script type="module">
+            //import { el, mount } from "redom";
+            const { el, mount } = redom;
+
+            const main_tile_name = el("h1", "Terms Of Service!");
+            var label_01 = el("label", "1: Be respect to others.");
+            var label_02 = el("label", "2: No Spamming and Bots");
+            var label_03 = el("label", "3: The material and content must have permission, credits from users, and links must not can not harm user to post.");
+            var label_04 = el("label", "4: No profanity and mature content that is outside the topic of post.");
+            var label_05 = el("label", "5: This post about game content if outside topic will be suspension or ban.");
+            var label_06 = el("label", "6: work in progress...");
+            //var br = el('br');
+
+            const div_access = el("#AccessTOS", [
+            main_tile_name
+            ,el('br')
+            ,label_01
+            ,el('br')
+            ,label_02
+            ,el('br')
+            ,label_03
+            ,el('br')
+            ,label_04
+            ,el('br')
+            ,label_05
+            ,el('br')
+            ,label_06
+
+            ]);
+
+            mount(document.body, div_access);
+        </script>
+   </head>
+   <body>
+
+   </body>
+</html>

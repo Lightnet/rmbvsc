@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+   <head>
+        <script src="https://redom.js.org/redom.min.js"></script>
+        <!--<br> 1: Be respect to others.-->
+        <script type="module">
+            //import { el, mount } from "redom";
+            const { el, mount } = redom;
+
+            const main_tile_name = el("h1", "Data Collection!");
+            var label_01 = el("label", "1: Work in progress.");
+            var label_02 = el("label", "2: Collect User, Email(not build), and basic information.");
+            var label_03 = el("label", "3: Collect Game data for objects on how user play and balance game play data.");
+            var label_04 = el("label", "4: Collect user use of game history logs.(anti cheating...)");
+            var label_05 = el("label", "5: Collect user cash shop items, history, and other to deal with fraud and transaction.( not build yet )");
+            var label_06 = el("label", "6: Work in progress...");
+            //var br = el('br');
+
+            const div_access = el("#AccessTOS", [
+            main_tile_name
+            ,el('br')
+            ,label_01
+            ,el('br')
+            ,label_02
+            ,el('br')
+            ,label_03
+            ,el('br')
+            ,label_04
+            ,el('br')
+            ,label_05
+            ,el('br')
+            ,label_06
+
+            ]);
+
+            mount(document.body, div_access);
+        </script>
+   </head>
+   <body>
+
+   </body>
+</html>
